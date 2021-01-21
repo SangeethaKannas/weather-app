@@ -13,6 +13,7 @@
     background-color: #fff;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
     -webkit-animation: open 2s cubic-bezier(0.39, 0, 0.38, 1);
+    animation: open 2s cubic-bezier(0.39, 0, 0.38, 1);
   }
 }
 
@@ -27,7 +28,19 @@
   background-color: #fff;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
   -webkit-animation: open 2s cubic-bezier(0.39, 0, 0.38, 1);
+  animation: open 2s cubic-bezier(0.39, 0, 0.38, 1);
 }
+
+@keyframes open {
+  from {
+    padding: 0 30px;
+    height: 0;
+  }
+  to {
+    height: 470px;
+  }
+}
+
 
 @-webkit-keyframes open {
   from {
@@ -50,6 +63,7 @@ h2 {
   font-weight: 300;
   font-size: 2.25em;
   -webkit-animation: up 2s cubic-bezier(0.39, 0, 0.38, 1);
+  animation: up 2s cubic-bezier(0.39, 0, 0.38, 1);
 }
 
 h3 {
@@ -59,6 +73,7 @@ h3 {
   font-weight: 400;
   font-size: 1em;
   -webkit-animation: up 2s cubic-bezier(0.39, 0, 0.38, 1) 0.1s;
+  animation: up 2s cubic-bezier(0.39, 0, 0.38, 1) 0.1s;
 }
 
 span {
@@ -83,6 +98,7 @@ span span {
   border-radius: 50%;
   background-color: #03a9f4;
   -webkit-animation: up 2s cubic-bezier(0.39, 0, 0.38, 1) 0.2s;
+  animation: up 2s cubic-bezier(0.39, 0, 0.38, 1) 0.2s;
 }
 
 .sun {
@@ -185,39 +201,6 @@ tr:nth-child(3) {
   100% {
     opacity: 1;
   }
-}
-
-@font-face {
-  font-family: Helvetica Neue LT;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url("https://fonts.twitter.com/helvetica_neue/1a14dcac-7c9e-471c-8039-33c730f871f2.woff2")
-      format("woff2"),
-    url("https://fonts.twitter.com/helvetica_neue/558ed534-0c60-42cf-8b94-d0a16eb70d37.woff")
-      format("woff");
-}
-
-@font-face {
-  font-family: Helvetica Neue LT;
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-  src: url("https://fonts.twitter.com/helvetica_neue/6acb9b26-7e8e-46b4-b68b-631ab07d6ed7.woff2")
-      format("woff2"),
-    url("https://fonts.twitter.com/helvetica_neue/2914a90e-d766-4cf8-97b9-04c5fe897f06.woff")
-      format("woff");
-}
-
-@font-face {
-  font-family: Helvetica Neue LT;
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url("https://fonts.twitter.com/helvetica_neue/d9122e8d-bf26-4f1c-bab9-c06599397b59.woff2")
-      format("woff2"),
-    url("https://fonts.twitter.com/helvetica_neue/db0cec12-a947-40fe-a115-c5ce22ee79f6.woff")
-      format("woff");
 }
 
 h2,

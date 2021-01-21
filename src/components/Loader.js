@@ -39,22 +39,11 @@ const Spinner = styled.div`
   }
 `
 
-const SpinnerSmall = styled.div`
-  border: 5px solid #f3f3f3;
-  -webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
-  border-top: 5px solid #555;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-`;
-
-const Loader = ({showSpinner}) => {
-  console.log(showSpinner);
-  return(<section>
+const Loader = ({showSpinner}) =>
+  (<section>
     { showSpinner ? <Overlay><Spinner /> </Overlay>: '' }
   </section>);
-}
+
 export default Loader;
 
 Loader.propTypes = {
