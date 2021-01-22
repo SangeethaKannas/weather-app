@@ -25,7 +25,7 @@ const Result = ({obj}) => {
           <h3>{obj.weather[0].description}
             <span>Wind {obj.wind.speed} km/h <span className="dot">•</span> humidity {obj.main.humidity}%</span>
             </h3>
-          <h2>{cel} &#8451</h2>
+          <h2>{cel} &#8451;</h2>
           <div class="sky">
               <div class="sun"></div>
               <div class="cloud">
@@ -44,8 +44,8 @@ const Result = ({obj}) => {
               <tr>
                   <td>{obj.main.pressure} hpa</td>
                   <td>{obj.clouds.all}%</td>
-                  <td>{maxTemp} &#8451</td>
-                  <td>{minTemp} &#8451</td>
+                  <td>{maxTemp} &#8451;</td>
+                  <td>{minTemp} &#8451;</td>
               </tr>
           </table>
         </div>
